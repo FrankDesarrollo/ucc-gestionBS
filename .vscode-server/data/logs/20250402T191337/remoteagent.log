@@ -1,0 +1,13 @@
+2025-04-02 19:13:37.531 [info] 
+
+
+
+
+2025-04-02 19:13:37.539 [info] Extension host agent started.
+2025-04-02 19:13:37.609 [info] Deleted marked for removal extension from disk ms-python.vscode-pylance /home/rank/.vscode-server/extensions/ms-python.vscode-pylance-2025.3.2
+2025-04-02 19:13:37.609 [info] Marked extension as removed ms-python.vscode-pylance-2025.3.2
+2025-04-02 19:13:37.822 [info] [127.0.0.1][04a89d8c][ManagementConnection] New connection established.
+2025-04-02 19:13:37.928 [info] [127.0.0.1][d63ad389][ExtensionHostConnection] New connection established.
+2025-04-02 19:13:37.988 [info] [127.0.0.1][d63ad389][ExtensionHostConnection] <3790> Launched Extension Host Process.
+2025-04-02 19:13:40.210 [info] [127.0.0.1][04a89d8c][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2025-04-02 19:13:40.279 [info] [127.0.0.1][d63ad389][ExtensionHostConnection] <3790> Extension Host Process exited with code: 0, signal: null.

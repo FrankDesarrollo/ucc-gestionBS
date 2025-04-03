@@ -528,3 +528,31 @@ docker-compose down
 mkdir aeropuerto_checkin
 cd aeropuerto_checkin
 code .
+nano init.sql
+docker-compose up -d
+mkdir scripts
+cd scripts
+nano menu.sh
+chmod +x menu.sh
+./menu.sh
+git init
+git add .
+git commit -m "Taller completo: gestión de ventas con Docker + PostgreSQL + menú interactivo"
+git branch -M main
+git remote add origin https://github.com/erickcolin2005/gestion_ventas.git
+git push -u origin main
+rm -rf .git  # (para eliminar el repo creado dentro de scripts/)
+git init
+git add .
+git commit -m "Taller completo: gestión de ventas con Docker + PostgreSQL + menú interactivo"
+git branch -M main
+git remote add origin https://github.com/erickcolin2005/gestion_ventas.git
+git push -u origin main
+cd .
+cd ..
+git init
+git add .
+git commit -m "Taller completo: gestión de ventas con Docker + PostgreSQL + menú interactivo"
+git branch -M main
+git push -u origin main
+git branch -M main

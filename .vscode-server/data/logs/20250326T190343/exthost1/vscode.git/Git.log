@@ -1,0 +1,82 @@
+2025-03-26 19:03:44.893 [info] [main] Log level: Info
+2025-03-26 19:03:44.894 [info] [main] Validating found git in: "git"
+2025-03-26 19:03:44.894 [info] [main] Using git "2.43.0" from "git"
+2025-03-26 19:03:44.894 [info] [Model][doInitialScan] Initial repository scan started
+2025-03-26 19:03:44.894 [info] > git rev-parse --show-toplevel [2ms]
+2025-03-26 19:03:44.894 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-03-26 19:03:44.894 [info] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-03-26 19:03:45.164 [info] > git rev-parse --show-toplevel [1ms]
+2025-03-26 19:03:45.164 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-03-26 19:03:46.224 [info] > git rev-parse --show-toplevel [1ms]
+2025-03-26 19:03:46.224 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-03-26 19:03:52.566 [info] > git rev-parse --show-toplevel [60ms]
+2025-03-26 19:03:52.566 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-03-26 19:03:57.968 [info] > git rev-parse --show-toplevel [1ms]
+2025-03-26 19:03:57.968 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-03-26 19:11:44.540 [info] > git rev-parse --show-toplevel [1ms]
+2025-03-26 19:11:44.543 [info] > git rev-parse --git-dir --git-common-dir [0ms]
+2025-03-26 19:11:44.551 [info] [Model][openRepository] Opened repository: /home/rank/aeropuerto_checkin
+2025-03-26 19:11:44.557 [info] [Git][getRemotes] No remotes found in the git config file
+2025-03-26 19:11:44.558 [info] > git config --get commit.template [2ms]
+2025-03-26 19:11:44.560 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [3ms]
+2025-03-26 19:11:44.560 [warning] [Git][getBranch] No such branch: master
+2025-03-26 19:11:44.567 [info] > git status -z -uall [4ms]
+2025-03-26 19:11:44.568 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2025-03-26 19:11:44.579 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [6ms]
+2025-03-26 19:11:44.579 [warning] [Git][getBranch] No such branch: master
+2025-03-26 19:11:44.579 [error] [GitHistoryProvider][resolveHEADMergeBase] Failed to resolve merge base for master: Error: No such branch: master.
+2025-03-26 19:11:44.580 [info] > git config --get commit.template [2ms]
+2025-03-26 19:11:44.582 [info] [Git][getRemotes] No remotes found in the git config file
+2025-03-26 19:11:44.583 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+2025-03-26 19:11:44.583 [warning] [Git][getBranch] No such branch: master
+2025-03-26 19:11:44.588 [info] > git status -z -uall [3ms]
+2025-03-26 19:11:44.589 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [2ms]
+2025-03-26 19:11:45.081 [info] > git check-ignore -v -z --stdin [1ms]
+2025-03-26 19:11:55.598 [info] [Git][getRemotes] No remotes found in the git config file
+2025-03-26 19:11:55.599 [info] > git config --get commit.template [2ms]
+2025-03-26 19:11:55.599 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+2025-03-26 19:11:55.603 [info] > git status -z -uall [2ms]
+2025-03-26 19:11:55.604 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [1ms]
+2025-03-26 19:11:55.958 [info] > git show --textconv :docker-compose.yml [2ms]
+2025-03-26 19:11:55.958 [info] > git ls-files --stage -- docker-compose.yml [0ms]
+2025-03-26 19:11:55.961 [info] > git cat-file -s 9d7739492249eaeb070f44652c03c19185c54bba [1ms]
+2025-03-26 19:11:56.016 [info] > git blame --root --incremental f8aa148d83b3e815a9b620db8ef263769eeb340d -- docker-compose.yml [2ms]
+2025-03-26 19:12:00.660 [info] [Git][getRemotes] No remotes found in the git config file
+2025-03-26 19:12:00.661 [info] > git config --get commit.template [4ms]
+2025-03-26 19:12:00.662 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2025-03-26 19:12:00.672 [info] > git status -z -uall [7ms]
+2025-03-26 19:12:00.673 [info] > git ls-files --stage -- docker-compose.yml [1ms]
+2025-03-26 19:12:00.675 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [7ms]
+2025-03-26 19:12:00.684 [info] > git cat-file -s 9d7739492249eaeb070f44652c03c19185c54bba [9ms]
+2025-03-26 19:12:00.691 [info] > git show --textconv :docker-compose.yml [1ms]
+2025-03-26 19:12:01.199 [info] [Git][getRemotes] No remotes found in the git config file
+2025-03-26 19:12:01.199 [info] > git config --get commit.template [2ms]
+2025-03-26 19:12:01.200 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-03-26 19:12:01.204 [info] > git status -z -uall [1ms]
+2025-03-26 19:12:01.204 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [1ms]
+2025-03-26 19:12:01.208 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-03-26 19:12:01.211 [info] > git config --get --local branch.main.vscode-merge-base [1ms]
+2025-03-26 19:12:01.211 [warning] [Git][config] git config failed: Failed to execute git
+2025-03-26 19:12:01.214 [info] > git reflog main --grep-reflog=branch: Created from *. [1ms]
+2025-03-26 19:12:03.746 [info] > git ls-files --stage -- docker-compose.yml [1ms]
+2025-03-26 19:12:03.749 [info] > git cat-file -s 9d7739492249eaeb070f44652c03c19185c54bba [1ms]
+2025-03-26 19:12:03.756 [info] > git show --textconv :docker-compose.yml [1ms]
+2025-03-26 19:12:05.699 [info] [Git][getRemotes] No remotes found in the git config file
+2025-03-26 19:12:05.699 [info] > git config --get commit.template [2ms]
+2025-03-26 19:12:05.700 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-03-26 19:12:05.703 [info] > git status -z -uall [2ms]
+2025-03-26 19:12:05.704 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [1ms]
+2025-03-26 19:12:09.923 [info] > git ls-files --stage -- docker-compose.yml [1ms]
+2025-03-26 19:12:09.926 [info] > git cat-file -s 9d7739492249eaeb070f44652c03c19185c54bba [1ms]
+2025-03-26 19:12:09.931 [info] > git show --textconv :docker-compose.yml [1ms]
+2025-03-26 19:12:15.007 [info] > git config --get commit.template [3ms]
+2025-03-26 19:12:15.008 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-03-26 19:12:15.013 [info] > git status -z -uall [3ms]
+2025-03-26 19:12:15.014 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [2ms]
+2025-03-26 19:12:26.766 [info] > git config --get commit.template [2ms]
+2025-03-26 19:12:26.766 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-03-26 19:12:26.769 [info] > git status -z -uall [1ms]
+2025-03-26 19:12:26.770 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [1ms]
+2025-03-26 19:12:26.865 [info] > git ls-files --stage -- docker-compose.yml [1ms]
+2025-03-26 19:12:26.868 [info] > git cat-file -s 9d7739492249eaeb070f44652c03c19185c54bba [1ms]
+2025-03-26 19:12:26.873 [info] > git show --textconv :docker-compose.yml [1ms]

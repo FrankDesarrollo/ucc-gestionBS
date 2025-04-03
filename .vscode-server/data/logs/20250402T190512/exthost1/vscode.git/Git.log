@@ -1,0 +1,52 @@
+2025-04-02 19:05:13.559 [info] [main] Log level: Info
+2025-04-02 19:05:13.559 [info] [main] Validating found git in: "git"
+2025-04-02 19:05:13.559 [info] [main] Using git "2.43.0" from "git"
+2025-04-02 19:05:13.559 [info] [Model][doInitialScan] Initial repository scan started
+2025-04-02 19:05:13.559 [info] > git rev-parse --show-toplevel [2ms]
+2025-04-02 19:05:13.559 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-04-02 19:05:13.559 [info] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-04-02 19:05:14.038 [info] > git rev-parse --show-toplevel [1ms]
+2025-04-02 19:05:14.038 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-04-02 19:05:15.118 [info] > git rev-parse --show-toplevel [1ms]
+2025-04-02 19:05:15.118 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-04-02 19:05:27.681 [info] > git rev-parse --show-toplevel [50ms]
+2025-04-02 19:05:27.681 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-04-02 19:05:29.087 [info] > git rev-parse --show-toplevel [1ms]
+2025-04-02 19:05:29.087 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-04-02 19:06:04.263 [info] > git rev-parse --show-toplevel [1ms]
+2025-04-02 19:06:04.263 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-04-02 19:10:56.730 [info] > git rev-parse --show-toplevel [1ms]
+2025-04-02 19:10:56.733 [info] > git rev-parse --git-dir --git-common-dir [1ms]
+2025-04-02 19:10:56.741 [info] [Model][openRepository] Opened repository: /home/rank/gestion_ventas/scripts
+2025-04-02 19:10:56.752 [info] > git config --get commit.template [6ms]
+2025-04-02 19:10:56.758 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2025-04-02 19:10:56.764 [info] > git status -z -uall [3ms]
+2025-04-02 19:10:56.768 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [4ms]
+2025-04-02 19:10:56.777 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [5ms]
+2025-04-02 19:10:56.780 [info] > git config --get commit.template [4ms]
+2025-04-02 19:10:56.781 [info] > git config --get --local branch.main.vscode-merge-base [2ms]
+2025-04-02 19:10:56.781 [warning] [Git][config] git config failed: Failed to execute git
+2025-04-02 19:10:56.786 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-04-02 19:10:56.790 [info] > git reflog main --grep-reflog=branch: Created from *. [7ms]
+2025-04-02 19:10:56.794 [info] > git status -z -uall [6ms]
+2025-04-02 19:10:56.794 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [4ms]
+2025-04-02 19:10:56.811 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [20ms]
+2025-04-02 19:10:56.811 [info] fatal: ref refs/remotes/origin/HEAD is not a symbolic ref
+2025-04-02 19:10:56.811 [warning] [Repository][getDefaultBranch] Failed to get default branch details: Failed to execute git.
+2025-04-02 19:10:56.811 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-04-02 19:10:56.852 [info] > git config --get --local branch.main.vscode-merge-base [39ms]
+2025-04-02 19:10:56.852 [warning] [Git][config] git config failed: Failed to execute git
+2025-04-02 19:10:56.855 [info] > git reflog main --grep-reflog=branch: Created from *. [1ms]
+2025-04-02 19:10:56.858 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [1ms]
+2025-04-02 19:10:56.858 [info] fatal: ref refs/remotes/origin/HEAD is not a symbolic ref
+2025-04-02 19:10:56.858 [warning] [Repository][getDefaultBranch] Failed to get default branch details: Failed to execute git.
+2025-04-02 19:10:57.268 [info] > git check-ignore -v -z --stdin [1ms]
+2025-04-02 19:11:26.739 [info] [Git][getRemotes] No remotes found in the git config file
+2025-04-02 19:11:26.739 [info] > git config --get commit.template [3ms]
+2025-04-02 19:11:26.739 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-04-02 19:11:26.744 [info] > git status -z -uall [3ms]
+2025-04-02 19:11:26.744 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [1ms]
+2025-04-02 19:11:33.969 [info] > git config --get commit.template [1ms]
+2025-04-02 19:11:33.972 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-04-02 19:11:33.976 [info] > git status -z -uall [2ms]
+2025-04-02 19:11:33.976 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [0ms]

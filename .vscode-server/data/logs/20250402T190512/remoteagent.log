@@ -1,0 +1,18 @@
+2025-04-02 19:05:12.637 [info] 
+
+
+
+
+2025-04-02 19:05:12.647 [info] Extension host agent started.
+2025-04-02 19:05:12.823 [info] [127.0.0.1][adb0bffa][ManagementConnection] New connection established.
+2025-04-02 19:05:12.961 [info] [127.0.0.1][b3afffc5][ExtensionHostConnection] New connection established.
+2025-04-02 19:05:12.964 [info] [127.0.0.1][b3afffc5][ExtensionHostConnection] <874> Launched Extension Host Process.
+2025-04-02 19:05:16.507 [info] Getting Manifest... ms-python.vscode-pylance
+2025-04-02 19:05:17.030 [info] Installing extension: ms-python.vscode-pylance {"productVersion":{"version":"1.98.2","date":"2025-03-12T13:32:45.399Z"},"pinned":false,"operation":3,"isApplicationScoped":false,"donotVerifySignature":false,"context":{"clientTargetPlatform":"win32-x64"},"profileLocation":{"$mid":1,"fsPath":"/home/rank/.vscode-server/extensions/extensions.json","external":"file:///home/rank/.vscode-server/extensions/extensions.json","path":"/home/rank/.vscode-server/extensions/extensions.json","scheme":"file"}}
+2025-04-02 19:05:17.965 [info] Getting Manifest... ms-python.python
+2025-04-02 19:05:18.354 [info] Getting Manifest... ms-python.debugpy
+2025-04-02 19:05:21.358 [info] Extension signature verification result for ms-python.vscode-pylance: Success. Internal Code: 0. Executed: true. Duration: 1085ms.
+2025-04-02 19:05:26.876 [info] Extracted extension to file:///home/rank/.vscode-server/extensions/ms-python.vscode-pylance-2025.4.1: ms-python.vscode-pylance
+2025-04-02 19:05:27.290 [info] Renamed to /home/rank/.vscode-server/extensions/ms-python.vscode-pylance-2025.4.1
+2025-04-02 19:05:27.306 [info] Marked extension as removed ms-python.vscode-pylance-2025.3.2
+2025-04-02 19:05:27.311 [info] Extension installed successfully: ms-python.vscode-pylance file:///home/rank/.vscode-server/extensions/extensions.json

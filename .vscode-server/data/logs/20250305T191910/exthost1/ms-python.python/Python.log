@@ -1,0 +1,10 @@
+2025-03-05 19:19:37.611 [info] Experiment 'pythonaa' is active
+2025-03-05 19:19:37.611 [info] Experiment 'pythonRecommendTensorboardExt' is active
+2025-03-05 19:19:37.611 [info] Experiment 'pythonSurveyNotificationcf' is active
+2025-03-05 19:19:37.611 [info] Experiment 'pythonTerminalEnvVarActivation' is active
+2025-03-05 19:19:37.611 [info] Experiment 'pythonTestAdapter' is active
+2025-03-05 19:19:37.611 [warning] Dir "/home/rank/ucc-gestionBS/.pixi/envs" is not watchable (directory does not exist)
+2025-03-05 19:19:37.635 [info] Python interpreter path: /bin/python3
+2025-03-05 19:19:37.654 [info] > pyenv which python
+2025-03-05 19:19:37.654 [info] cwd: .
+2025-03-05 19:19:38.988 [info] Starting Pylance language server.

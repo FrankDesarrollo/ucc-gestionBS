@@ -1,17 +1,17 @@
 version: '3.8'
+
 services:
   postgres:
-    image: postgres:latest
-    container_name: mi_postgres
-    restart: always
-    environment:
-      POSTGRES_USER: admin
-      POSTGRES_PASSWORD: admin
-      POSTGRES_DB: mi_base
+    image: postgres:15
+    container_name: bd_gestion_semana10
     ports:
       - "5432:5432"
+    environment:
+      POSTGRES_DB: gestion_bdatos
+      POSTGRES_USER: erick
+      POSTGRES_PASSWORD: admin123
     volumes:
-      - postgres_data:/var/lib/postgresql/data
+      - pgdata:/var/lib/postgresql/data
 
 volumes:
-  postgres_data:
+  pgdata:

@@ -1,0 +1,68 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_USER: turismo
+      POSTGRES_PASSWORD: secreto
+      POSTGRES_DB: reservas
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - backend
+
+  cli:
+    build:
+      context: ../api
+    depends_on:
+      - db
+    entrypoint: ["python", "cli.py"]
+    environment:
+      DATABASE_URL: postgres://turismo:secreto@db:5432/reservas
+    stdin_open: true
+    tty: true
+    volumes:
+      - ../api/backup.sh:/app/backup.sh:ro
+      - ../api/backups:/backups
+    networks:
+      - backend
+
+  simulador:
+    build:
+      context: ../api
+    profiles:
+      - simulador
+    depends_on:
+      - db
+    entrypoint: ["python", "simulador.py"]
+    environment:
+      DATABASE_URL: postgres://turismo:secreto@db:5432/reservas
+      RESERVAS_GENERAR: 20
+    networks:
+      - backend
+
+  backup:
+    image: postgres:15-alpine
+    depends_on:
+      - db
+    entrypoint: ["/bin/sh","-c","/scripts/backup.sh"]
+    environment:
+      PGHOST: db
+      PGUSER: turismo
+      PGPASSWORD: secreto
+      PGDATABASE: reservas
+    volumes:
+      - ../api/backup.sh:/scripts/backup.sh:ro
+      - ../api/backups:/backups
+    networks:
+      - backend
+
+volumes:
+  pgdata:
+
+networks:
+  backend:
+    driver: bridge
